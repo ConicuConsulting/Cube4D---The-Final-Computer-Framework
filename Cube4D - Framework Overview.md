@@ -32,7 +32,11 @@ Cube4D operates through a **4D programming model**, with each dimension represen
 
 This design allows Cube4D to efficiently manage complex data relationships in real-time, while maintaining a clear and scalable structure.
 
-> *Insert your first screenshot here to illustrate the 4D structure of Cube4D and the concept of X, Y, Z, and Temporal axes.*
+![image](https://github.com/user-attachments/assets/3fa0cba8-a9bd-4b72-9d3d-3fa7a08ac9d8)
+
+
+> *Illustration of the 4D structure of Cube4D and the concept of X, Y, Z, and Temporal axes.*
+
 
 ### Bit Encoding and Perfect Numbers
 
@@ -40,7 +44,10 @@ The encoding structure within Cube4D leverages **perfect numbers** and **Mersenn
 
 By using perfect numbers as benchmarks, Cube4D scales efficiently with each additional bit layer, enabling seamless expansion and detailed data querying.
 
-> *Placeholder for the “Perfect Numbers Bit Structure” screenshot.*
+
+![image](https://github.com/user-attachments/assets/898a128d-3c96-441d-93c2-26f1d11784a8)
+
+> *Perfect Numbers Bit Structure*
 
 ### Example of Binary Encoding
 
@@ -60,7 +67,7 @@ In this query, each part of the binary sequence corresponds to:
 
 This binary structure allows Cube4D to maintain an efficient and compact representation of data, making it easy to scale.
 
-> *Insert your “Active Graph Networks | 4D Compute” screenshot here.*
+> *“Active Graph Networks | 4D Compute*
 
 ---
 
@@ -72,13 +79,16 @@ One of the most exciting aspects of Cube4D is how it manages **dynamic relations
 
 This allows Cube4D to apply complex relationships without overwhelming the underlying system structure. For example, in a healthcare application, it could model patient-doctor interactions, medication schedules, and treatment outcomes dynamically.
 
-> *Insert your “Enhanced Active Graph Network (AGN) Structure for Patient Data” screenshot here.*
+
+
+> *Enhanced Active Graph Network (AGN) Structure for Patient Data*
 
 ### Time Series Data with Cube4D
 
 Cube4D isn’t limited to static data—it can also handle time-sensitive information. For instance, in financial applications, Cube4D can track **BTC price, sentiment indices, volatility, and correlation** over time. By adding a temporal layer, Cube4D enables real-time adaptability, allowing analysts to visualize patterns as they evolve.
 
-> *Insert your “BTC Price and Sentiment Analysis” screenshot here.*
+
+> *BTC Price and Sentiment Analysis*
 
 ### 3D and Expanding Wave Visualizations
 
