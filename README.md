@@ -110,6 +110,35 @@ Binary: 1011111.0010010.0000010..0010011.0000110
 
 This binary encoding simplifies complex queries by denoting each node, relationship, and condition within a compact sequence.
 
+Here’s the requested mermaid diagram illustrating the relationships within the Cube4D schema:
+
+```mermaid
+graph TD
+    subgraph Cube4D_Schema
+        C1["C1: Cognitive - Pattern recognition"]
+        C2["C2: Cognitive - Logical reasoning"]
+        K1["K1: Knowledge - Mathematics"]
+        K2["K2: Knowledge - Physics"]
+        T1["T1: Task - Solve math problem"]
+        O1["O1: Outcome - Solution to math problem"]
+        P1["P1: Policy - Influence based on knowledge level"]
+
+        C1 -->|influences| K1
+        C2 -->|processes| T1
+        K1 -->|influences by| P1
+        T1 -->|results in| O1
+    end
+```
+
+In this diagram:
+- **Cognitive Nodes (C1, C2)** represent cognitive functions like pattern recognition and logical reasoning.
+- **Knowledge Nodes (K1, K2)** provide specific knowledge fields like mathematics and physics.
+- **Task Node (T1)** signifies the task of solving a math problem.
+- **Outcome Node (O1)** is the solution to the math problem.
+- **Policy Node (P1)** applies influence based on knowledge level.
+
+This visual provides a simplified look at how Cube4D uses relationships and policies to process data adaptively. Let me know if you’d like further details on encoding or additional relationships mapped out.
+
 ---
 
 ## Practical Use Cases
