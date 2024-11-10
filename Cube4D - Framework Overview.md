@@ -67,6 +67,8 @@ In this query, each part of the binary sequence corresponds to:
 
 This binary structure allows Cube4D to maintain an efficient and compact representation of data, making it easy to scale.
 
+![image](https://github.com/user-attachments/assets/ea0decc5-ab18-47a0-a497-8053663060a7)
+
 > *“Active Graph Networks | 4D Compute*
 
 ---
@@ -79,14 +81,15 @@ One of the most exciting aspects of Cube4D is how it manages **dynamic relations
 
 This allows Cube4D to apply complex relationships without overwhelming the underlying system structure. For example, in a healthcare application, it could model patient-doctor interactions, medication schedules, and treatment outcomes dynamically.
 
+![Screenshot 2024-11-06 at 12 48 17 PM](https://github.com/user-attachments/assets/ba1e2e5a-4c3d-4f43-9a0f-2e6fb5039bee)
 
-
-> *Enhanced Active Graph Network (AGN) Structure for Patient Data*
+> *Enhanced Active Graph Network (AGN) Structure*
 
 ### Time Series Data with Cube4D
 
 Cube4D isn’t limited to static data—it can also handle time-sensitive information. For instance, in financial applications, Cube4D can track **BTC price, sentiment indices, volatility, and correlation** over time. By adding a temporal layer, Cube4D enables real-time adaptability, allowing analysts to visualize patterns as they evolve.
 
+![image](https://github.com/user-attachments/assets/89c120d3-1935-4ae7-824c-01082720a1c1)
 
 > *BTC Price and Sentiment Analysis*
 
@@ -94,7 +97,12 @@ Cube4D isn’t limited to static data—it can also handle time-sensitive inform
 
 One of the innovative aspects of Cube4D is its ability to visualize data in **3D and even expanding wave formats**. This provides a deeper understanding of how data points interact across different layers. Through interactive visualizations, users can explore the impact of various parameters, such as amplitude, frequency, and phase shift, offering a unique perspective on data relationships.
 
-> *Insert your “Interactive 3D Expanding Wave Visualization” screenshot here.*
+![Screenshot 2024-11-09 at 1 45 39 PM](https://github.com/user-attachments/assets/fd253e86-be8a-4bab-8dac-0fbd9b93bd5c)
+
+> *Interactive 3D Expanding Wave Visualization”*
+
+![Screenshot 2024-11-09 at 1 20 39 PM](https://github.com/user-attachments/assets/362246f5-5d46-441c-ad71-6be0dfd58224)
+
 
 ---
 
