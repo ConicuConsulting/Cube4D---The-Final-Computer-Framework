@@ -110,6 +110,97 @@ Binary: 1011111.0010010.0000010..0010011.0000110
 
 This binary encoding simplifies complex queries by denoting each node, relationship, and condition within a compact sequence.
 
+Here’s the requested mermaid diagram illustrating the relationships within the Cube4D schema:
+
+```mermaid
+graph TD
+    subgraph Cube4D_Schema
+        C1["C1: Cognitive - Pattern recognition"]
+        C2["C2: Cognitive - Logical reasoning"]
+        K1["K1: Knowledge - Mathematics"]
+        K2["K2: Knowledge - Physics"]
+        T1["T1: Task - Solve math problem"]
+        O1["O1: Outcome - Solution to math problem"]
+        P1["P1: Policy - Influence based on knowledge level"]
+
+        C1 -->|influences| K1
+        C2 -->|processes| T1
+        K1 -->|influences by| P1
+        T1 -->|results in| O1
+    end
+```
+
+In this diagram:
+- **Cognitive Nodes (C1, C2)** represent cognitive functions like pattern recognition and logical reasoning.
+- **Knowledge Nodes (K1, K2)** provide specific knowledge fields like mathematics and physics.
+- **Task Node (T1)** signifies the task of solving a math problem.
+- **Outcome Node (O1)** is the solution to the math problem.
+- **Policy Node (P1)** applies influence based on knowledge level.
+
+This visual provides a simplified look at how Cube4D uses relationships and policies to process data adaptively. Let me know if you’d like further details on encoding or additional relationships mapped out.
+
+Thid provides a more detailed, synthetic relationship-based mermaid diagram for the Cube4D model, based on both the context you've shared and the uploaded images as inspiration. Here's an enhanced diagram that represents a more complex, policy-driven relationship structure.
+
+### Updated Mermaid Diagram for Cube4D with Synthetic Relationships
+
+```mermaid
+graph TD
+    subgraph Cube4D_Advanced_Structure
+        C1["C1: Cognitive - Pattern recognition"]
+        C2["C2: Cognitive - Logical reasoning"]
+        C3["C3: Cognitive - Memory recall"]
+
+        K1["K1: Knowledge - Mathematics"]
+        K2["K2: Knowledge - Physics"]
+        K3["K3: Knowledge - Chemistry"]
+
+        T1["T1: Task - Solve math problem"]
+        T2["T2: Task - Predict motion"]
+        T3["T3: Task - Chemical reaction analysis"]
+
+        O1["O1: Outcome - Solution to math problem"]
+        O2["O2: Outcome - Motion prediction"]
+        O3["O3: Outcome - Chemical reaction outcome"]
+
+        P1["P1: Policy - Influence based on knowledge level"]
+        P2["P2: Policy - Boost logical reasoning during daytime"]
+        P3["P3: Policy - Enhance memory recall under high complexity"]
+        
+        R1["R1: Rule - Outcome depends on knowledge and task complexity"]
+        R2["R2: Rule - Cognitive tasks prioritize time-based policies"]
+
+        C1 -->|influences| K1
+        C2 -->|processes| T1
+        C3 -->|recalls information for| T3
+        
+        K1 -->|enhances| T1
+        K2 -->|supports| T2
+        K3 -->|enhances| T3
+
+        T1 -->|leads to| O1
+        T2 -->|leads to| O2
+        T3 -->|leads to| O3
+
+        O1 -->|validated by| R1
+        O2 -->|validated by| R2
+        O3 -->|affected by| P3
+
+        P1 -->|modifies influence on| C1
+        P2 -->|boosts| C2
+        P3 -->|enhances| C3
+    end
+```
+
+### Explanation of this Structure:
+- **Cognitive Nodes (C1, C2, C3)** represent different cognitive processes: pattern recognition, logical reasoning, and memory recall.
+- **Knowledge Nodes (K1, K2, K3)** represent specific domains of knowledge, such as mathematics, physics, and chemistry.
+- **Task Nodes (T1, T2, T3)** define various tasks that utilize cognitive and knowledge nodes to produce outcomes.
+- **Outcome Nodes (O1, O2, O3)** represent the results of tasks, which are impacted by specific rules and policies.
+- **Policy Nodes (P1, P2, P3)** apply conditions based on time, complexity, and knowledge level, adding flexibility to how tasks are approached.
+- **Rule Nodes (R1, R2)** validate outcomes based on task complexity and time-sensitive conditions.
+
+This visual captures the adaptability of Cube4D through policy-driven relationships and synthetic rules, demonstrating its use in complex decision-making and knowledge processing scenarios. This diagram, along with further contextual examples, can be included in the project README to provide readers with a holistic understanding of the Cube4D model’s potential.
+
 ---
 
 ## Practical Use Cases
@@ -161,10 +252,6 @@ flowchart TD
         ProcessQuery -->|Return| DataOutput[Data Output Response]
     end
 ```
-
----
-
-Absolutely. Here’s an in-depth, technical-focused section to replace the "Final Thoughts" part, emphasizing Cube4D’s advanced functionality, technical components, and potential across various domains.
 
 ---
 
@@ -242,4 +329,93 @@ Cube4D is under continuous refinement, with future improvements focusing on expa
 
 Cube4D’s innovative, four-dimensional structure and Active Graph Networks pave the way for a new era in data processing, setting benchmarks for efficiency, scalability, and adaptability. With its advanced architecture and adaptive capabilities, Cube4D holds the potential to revolutionize industries that rely on complex data processing, from healthcare to AI, making it a foundational tool for modern data engineering and problem-solving.
 
---- 
+---
+
+### Cube4D Structure and Interaction Overview
+
+Imagine three stacked Excel spreadsheets, where each cell is equal in size and shape, but each layer has unique properties corresponding to the dimensions of data storage, relationship mapping, and logical processing. The Cube4D model operates by querying data across three primary axes, creating a framework for real-time data retrieval and adaptive logic.
+
+---
+
+#### Cube4D Layer Overview:
+
+| **Layer**     | **Function**                             | **Axis**  | **Description**                                                                                   |
+|---------------|-----------------------------------------|-----------|---------------------------------------------------------------------------------------------------|
+| **Data Layer**    | Information Storage                     | X         | Raw data, knowledge nodes, and foundational information on the X-axis.                            |
+| **Relationship Layer** | Connection Mapping                      | Y         | Defines the connections and relationships among data points on the Y-axis.                        |
+| **Logic Layer**    | Policy and Rules Processing          | Z         | Governs the adaptive policies, conditions, and rules applied to data relationships on the Z-axis. |
+| **Temporal Layer** | Time-Based Adaptation                | T (Temporal) | Adds a time-sensitive adaptability, allowing dynamic responses based on temporal conditions.      |
+
+Each of these layers functions similarly to a separate Excel sheet, with cells (nodes) and interactions (edges) represented in binary encoding to maintain efficiency and scalability.
+
+---
+
+### Visual Representation: Axis and Query Flow
+
+Below is a conceptual flow diagram of Cube4D’s data interaction flow, simulating the cross-referencing of nodes from each layer along the X, Y, and Z axes.
+
+```mermaid
+graph TD
+    subgraph Cube4D_Structure
+        DataLayer["Data Layer (X-Axis)"] -->|Defines| RelationshipLayer["Relationship Layer (Y-Axis)"]
+        RelationshipLayer -->|Conditions| LogicLayer["Logic Layer (Z-Axis)"]
+        LogicLayer -->|Time-Based Adaptation| TemporalLayer["Temporal Layer (T)"]
+    end
+```
+
+In this diagram:
+- The **Data Layer (X-Axis)** holds raw information and knowledge nodes.
+- The **Relationship Layer (Y-Axis)** links these data points with connection rules.
+- The **Logic Layer (Z-Axis)** applies policies and adaptive conditions to these connections.
+- The **Temporal Layer (T-Axis)** refines responses based on time-sensitive logic, creating a dynamic system.
+
+---
+
+### Cube4D Node Structure Table
+
+| **Node Type**      | **Function**                   | **Encoding**               | **Description**                                       |
+|--------------------|--------------------------------|----------------------------|-------------------------------------------------------|
+| **Cognitive Node** | Pattern Recognition, Reasoning | Binary: `001`              | Performs pattern-based tasks and applies logical reasoning. |
+| **Knowledge Node** | Domain Information             | Binary: `010`              | Stores domain-specific data, like mathematics or healthcare. |
+| **Task Node**      | Executes Goals                 | Binary: `011`              | Represents specific tasks or objectives to achieve.   |
+| **Outcome Node**   | Results and Outputs            | Binary: `100`              | Displays the result of cognitive and task-based processing. |
+| **Policy Node**    | Governs Relationship Influence | Binary: `101`              | Defines conditions for how relationships should adapt.|
+| **Rule Node**      | Logic Constraints              | Binary: `110`              | Sets the constraints or conditions for processing.    |
+
+Each node is uniquely identified using binary encoding, which allows Cube4D to efficiently handle complex queries, retrieve specific node types, and apply relevant rules dynamically.
+
+---
+
+### Query Example: Multi-Axis Cube4D Search
+
+To visualize Cube4D’s querying process, imagine querying across these axes like looking up coordinates on each Excel sheet. Here’s how an example query could retrieve and manipulate data across Cube4D’s layers:
+
+1. **Query**: Retrieve the "Patient Record" for a user, with constraints applied based on their role and temporal data.
+2. **Interpretation across Axes**:
+   - **X-Axis (Data)**: Looks up specific patient data.
+   - **Y-Axis (Relationship)**: Maps the patient to relevant medical history or relationships (e.g., doctor-patient).
+   - **Z-Axis (Logic)**: Applies access control policies based on the requester’s role.
+   - **T-Axis (Temporal)**: Ensures the data is current, applying any time-based updates if necessary.
+
+```mermaid
+flowchart LR
+    subgraph Query Flow
+        PatientRecord[Patient Record Request]
+        PatientRecord --> DataLookup[Data Lookup on X-Axis]
+        DataLookup --> RelMapping[Relationship Mapping on Y-Axis]
+        RelMapping --> ApplyPolicy[Apply Policies on Z-Axis]
+        ApplyPolicy --> TimeCheck[Time-Based Validation on T-Axis]
+        TimeCheck --> ReturnData[Return Filtered Data]
+    end
+```
+
+### Cube4D Framework Application Roadmap
+
+| **Phase**        | **Goal**                                  | **Deliverables**                                                                |
+|------------------|-------------------------------------------|----------------------------------------------------------------------------------|
+| **Phase 1**      | Core Framework and Encoding               | Establish basic Cube4D framework with bit encoding and policy-driven nodes.      |
+| **Phase 2**      | Domain-Specific Testing                   | Integrate domain-specific data (e.g., healthcare) to test adaptability.          |
+| **Phase 3**      | Advanced Policy and Rule Refinement       | Introduce complex rules for scalability and time-based processing adaptability.  |
+| **Phase 4**      | Community Collaboration                   | Release open-source version, encourage external development and use-case testing.|
+
+This structured, four-dimensional design makes Cube4D ideal for real-time, adaptive systems that require complex data relationships and high dimensional adaptability. 
