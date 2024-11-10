@@ -1,7 +1,3 @@
-This version of the README includes comprehensive technical details, structured explanations, and layered illustrations to provide a deeper understanding of Cube4D’s four-dimensional programming model. I've incorporated structured sections for key components, added mermaid diagrams, tables, and flowcharts to illustrate concepts, and explained the practical applications and roadmap.
-
----
-
 # Cube4D: A Thesis on Active Graph Networks and Four-Dimensional Data Programming
 
 **Author**: *Callum Maystone*
