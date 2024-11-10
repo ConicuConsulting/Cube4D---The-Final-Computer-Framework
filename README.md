@@ -1,6 +1,6 @@
 # Cube4D: A Thesis on Active Graph Networks and Four-Dimensional Data Programming
 
-**Author**: *[Your Name]*
+**Author**: *Callum Maystone*
 
 **Abstract**:  
 Cube4D represents a paradigm shift in data structuring and programming logic, combining graph theory with multidimensional, policy-driven data interactions. This thesis explores Cube4D’s technical foundations, conceptual structure, and real-world applicability. Originating from insights in data architecture and cognitive reasoning, Cube4D enables dynamic data handling by introducing Active Graph Networks (AGN) — a framework designed to optimize complex data relationships through adaptable policy enforcement, rule-based logic, and time-based conditions.
