@@ -1,5 +1,3 @@
-
-
 Cube4D: The Final Programming Framework
 
 License Notice
@@ -18,4 +16,3 @@ No additional restrictions — You may not apply legal terms or technological me
 For more details, see the full license at https://creativecommons.org/licenses/by-nc-sa/4.0/.
 
 Disclaimer: This license does not provide any warranty. The author(s) and contributor(s) of Cube4D are not liable for any damages resulting from its use.
-
