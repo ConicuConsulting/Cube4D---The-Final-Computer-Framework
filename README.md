@@ -265,10 +265,10 @@ Below is a conceptual flow diagram of Cube4D’s data interaction flow, simulati
 
 ```mermaid
 graph TD
-    subgraph Cube4D Structure
-        DataLayer[Data Layer (X-Axis)] -->|Defines| RelationshipLayer[Relationship Layer (Y-Axis)]
-        RelationshipLayer -->|Conditions| LogicLayer[Logic Layer (Z-Axis)]
-        LogicLayer -->|Time-Based Adaptation| TemporalLayer[Temporal Layer (T)]
+    subgraph Cube4D_Structure
+        DataLayer["Data Layer (X-Axis)"] -->|Defines| RelationshipLayer["Relationship Layer (Y-Axis)"]
+        RelationshipLayer -->|Conditions| LogicLayer["Logic Layer (Z-Axis)"]
+        LogicLayer -->|Time-Based Adaptation| TemporalLayer["Temporal Layer (T)"]
     end
 ```
 
