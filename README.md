@@ -238,4 +238,93 @@ Cube4D is under continuous refinement, with future improvements focusing on expa
 
 Cube4D’s innovative, four-dimensional structure and Active Graph Networks pave the way for a new era in data processing, setting benchmarks for efficiency, scalability, and adaptability. With its advanced architecture and adaptive capabilities, Cube4D holds the potential to revolutionize industries that rely on complex data processing, from healthcare to AI, making it a foundational tool for modern data engineering and problem-solving.
 
---- 
+---
+
+### Cube4D Structure and Interaction Overview
+
+Imagine three stacked Excel spreadsheets, where each cell is equal in size and shape, but each layer has unique properties corresponding to the dimensions of data storage, relationship mapping, and logical processing. The Cube4D model operates by querying data across three primary axes, creating a framework for real-time data retrieval and adaptive logic.
+
+---
+
+#### Cube4D Layer Overview:
+
+| **Layer**     | **Function**                             | **Axis**  | **Description**                                                                                   |
+|---------------|-----------------------------------------|-----------|---------------------------------------------------------------------------------------------------|
+| **Data Layer**    | Information Storage                     | X         | Raw data, knowledge nodes, and foundational information on the X-axis.                            |
+| **Relationship Layer** | Connection Mapping                      | Y         | Defines the connections and relationships among data points on the Y-axis.                        |
+| **Logic Layer**    | Policy and Rules Processing          | Z         | Governs the adaptive policies, conditions, and rules applied to data relationships on the Z-axis. |
+| **Temporal Layer** | Time-Based Adaptation                | T (Temporal) | Adds a time-sensitive adaptability, allowing dynamic responses based on temporal conditions.      |
+
+Each of these layers functions similarly to a separate Excel sheet, with cells (nodes) and interactions (edges) represented in binary encoding to maintain efficiency and scalability.
+
+---
+
+### Visual Representation: Axis and Query Flow
+
+Below is a conceptual flow diagram of Cube4D’s data interaction flow, simulating the cross-referencing of nodes from each layer along the X, Y, and Z axes.
+
+```mermaid
+graph TD
+    subgraph Cube4D Structure
+        DataLayer[Data Layer (X-Axis)] -->|Defines| RelationshipLayer[Relationship Layer (Y-Axis)]
+        RelationshipLayer -->|Conditions| LogicLayer[Logic Layer (Z-Axis)]
+        LogicLayer -->|Time-Based Adaptation| TemporalLayer[Temporal Layer (T)]
+    end
+```
+
+In this diagram:
+- The **Data Layer (X-Axis)** holds raw information and knowledge nodes.
+- The **Relationship Layer (Y-Axis)** links these data points with connection rules.
+- The **Logic Layer (Z-Axis)** applies policies and adaptive conditions to these connections.
+- The **Temporal Layer (T-Axis)** refines responses based on time-sensitive logic, creating a dynamic system.
+
+---
+
+### Cube4D Node Structure Table
+
+| **Node Type**      | **Function**                   | **Encoding**               | **Description**                                       |
+|--------------------|--------------------------------|----------------------------|-------------------------------------------------------|
+| **Cognitive Node** | Pattern Recognition, Reasoning | Binary: `001`              | Performs pattern-based tasks and applies logical reasoning. |
+| **Knowledge Node** | Domain Information             | Binary: `010`              | Stores domain-specific data, like mathematics or healthcare. |
+| **Task Node**      | Executes Goals                 | Binary: `011`              | Represents specific tasks or objectives to achieve.   |
+| **Outcome Node**   | Results and Outputs            | Binary: `100`              | Displays the result of cognitive and task-based processing. |
+| **Policy Node**    | Governs Relationship Influence | Binary: `101`              | Defines conditions for how relationships should adapt.|
+| **Rule Node**      | Logic Constraints              | Binary: `110`              | Sets the constraints or conditions for processing.    |
+
+Each node is uniquely identified using binary encoding, which allows Cube4D to efficiently handle complex queries, retrieve specific node types, and apply relevant rules dynamically.
+
+---
+
+### Query Example: Multi-Axis Cube4D Search
+
+To visualize Cube4D’s querying process, imagine querying across these axes like looking up coordinates on each Excel sheet. Here’s how an example query could retrieve and manipulate data across Cube4D’s layers:
+
+1. **Query**: Retrieve the "Patient Record" for a user, with constraints applied based on their role and temporal data.
+2. **Interpretation across Axes**:
+   - **X-Axis (Data)**: Looks up specific patient data.
+   - **Y-Axis (Relationship)**: Maps the patient to relevant medical history or relationships (e.g., doctor-patient).
+   - **Z-Axis (Logic)**: Applies access control policies based on the requester’s role.
+   - **T-Axis (Temporal)**: Ensures the data is current, applying any time-based updates if necessary.
+
+```mermaid
+flowchart LR
+    subgraph Query Flow
+        PatientRecord[Patient Record Request]
+        PatientRecord --> DataLookup[Data Lookup on X-Axis]
+        DataLookup --> RelMapping[Relationship Mapping on Y-Axis]
+        RelMapping --> ApplyPolicy[Apply Policies on Z-Axis]
+        ApplyPolicy --> TimeCheck[Time-Based Validation on T-Axis]
+        TimeCheck --> ReturnData[Return Filtered Data]
+    end
+```
+
+### Cube4D Framework Application Roadmap
+
+| **Phase**        | **Goal**                                  | **Deliverables**                                                                |
+|------------------|-------------------------------------------|----------------------------------------------------------------------------------|
+| **Phase 1**      | Core Framework and Encoding               | Establish basic Cube4D framework with bit encoding and policy-driven nodes.      |
+| **Phase 2**      | Domain-Specific Testing                   | Integrate domain-specific data (e.g., healthcare) to test adaptability.          |
+| **Phase 3**      | Advanced Policy and Rule Refinement       | Introduce complex rules for scalability and time-based processing adaptability.  |
+| **Phase 4**      | Community Collaboration                   | Release open-source version, encourage external development and use-case testing.|
+
+This structured, four-dimensional design makes Cube4D ideal for real-time, adaptive systems that require complex data relationships and high dimensional adaptability. 
